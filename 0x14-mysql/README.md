@@ -20,3 +20,10 @@ database server on the database `tyrell_corp`.
   * Usage: `./5-mysql_backup <MySQL root password>`
   * Generates a dump containing all MySQL databases on the root server.
   * Names the resulting tar archive in the format `day-month-year.tar.gz`.
+
+
+ create user 'holberton_user'@'localhost' identified by 'projectcorrection280hbtn';
+ GRANT ALL PRIVILEGES ON *.* TO 'holberton_user'@'localhost';
+
+ FLUSH PRIVILEGES;
+SELECT user FROM mysql.user;
